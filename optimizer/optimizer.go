@@ -77,9 +77,7 @@ func CostOptimization(prices []float64, opts ...Option) ([]int, error) {
 		if value < 0 {
 			res[i] = 1
 			selectedCount++
-		} /*else {
-			res[i] = 0
-		}*/
+		}
 	}
 
 	// If there is enough negative costs return only those
